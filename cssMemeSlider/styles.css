@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.wrapper {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_slider {
+    width: 60%;
+    background-color: rgb(182, 182, 182);
+
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+
+}
+
+.wrap_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vh;
+    width: 30%;
+}
+
+.circle {
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: rgb(67, 141, 205);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1%;
+    transition: all .4s ease;
+}
+
+.circle:hover {
+    opacity: 50%;
+}
+
+.box_borders {
+    width: 90%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider_for_all {
+    margin-bottom: 3%;
+    height: 80%;
+    width: 500%;
+    display: flex;
+    margin-left: auto;
+}
+
+.meme {
+    width: 100%;
+    transition: all .6s ease;
+}
+
+.meme img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+input[name="radio_buttons"] {
+    /*visibility: hidden; */
+}
+
+#button1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#button2:checked ~.on{
+    margin-left: -25%;
+}
+
+#button3:checked ~.on{
+    margin-left: -50%;
+}
+
+#button4:checked ~.on{
+    margin-left: -75%;
+}
+
+.under_image {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.for_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    display: flex;
+    margin-top: 0;
+    font-size: 2vh;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+    
