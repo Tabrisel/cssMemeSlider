@@ -1,7 +1,23 @@
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/NunitoSans_7pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/NunitoSans_7pt_Condensed-Bold.ttf");
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.815);
+    font-family: Nunito Sans;
 }
 
 .wrapper {
@@ -9,11 +25,13 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.box_slider {
-    width: 60%;
+.for_slider {
+    max-width: 50rem;
+    width: 50vw;
     background-color: rgb(182, 182, 182);
     display: flex;
     flex-direction: column;
@@ -27,7 +45,6 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 1vh;
-    width: 30%;
 }
 
 .circle {
@@ -45,21 +62,17 @@ body {
 }
 
 .box_borders {
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5%;
+    max-width: 100%;
+    width: 100%;
     overflow: hidden;
-    width: 90%;
-    margin-top: 1vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100%;
 }
 
-.slider_for_all {
-    margin-bottom: 3%;
-    height: 60%;
+.slider_for_images {
     display: flex;
-    gap: 6%;
+    flex-direction: row;
+    transition: all .2s ease-in-out;
 }
 
 .meme {
@@ -68,53 +81,72 @@ body {
 }
 
 .meme img{
-    min-width: auto;
-    min-height: auto;
-  
-    height: 100%;
+    min-width: 100%;
+    height: 32rem;
 }
 
 input[name="radio_buttons"] {
     display: none;
 }
 
-#button1:checked~.s1{
+#button1:checked~.ON{
     margin-left: 0%;
 }
 
-#button2:checked~.s1{
-    margin-left: -95%;
+#button2:checked~.ON{
+    margin-left: -100%;
 }
-#button3:checked~.s1{
-    margin-left: -195%;
+#button3:checked~.ON{
+    margin-left: -200%;
 }
-#button4:checked~.s1{
+#button4:checked~.ON{
     margin-left: -300%;
 }
-#button5:checked~.s1{
+#button5:checked~.ON{
+    margin-left: -400%;
+}
+
+#button1:checked~.text_ON{
+    margin-left: 0%;
+}
+
+#button2:checked~.text_ON{
+    margin-left: -100%;
+}
+#button3:checked~.text_ON{
+    margin-left: -200%;
+}
+#button4:checked~.text_ON{
+    margin-left: -300%;
+}
+#button5:checked~.text_ON{
     margin-left: -400%;
 }
 
 
 .under_image {
-    width: 100%;
-    height: 5vh;
+    margin-top: 3vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 .for_text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: white;
-    display: flex;
-    margin-top: 0;
-    font-size: 2vh;
+    overflow: hidden;
+    width: 50%;
 }
+.text_wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.words {
+    width: 100%;
+    min-width: 100%;
+}
+
 
 p {
     margin-top: 2vh;
