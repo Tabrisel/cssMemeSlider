@@ -44,24 +44,105 @@ body {
 
 .wrap_buttons {
     display: flex;
-    justify-content: flex-end;
-    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     z-index: 20;
 }
 
 .circle {
+    display: block;
     height: 1.5vh;
     width: 1.5vh;
-    background-color: rgb(67, 141, 205);
-    border-radius: 50%;
     cursor: pointer;
-    margin-right: 1%;
+}
+
+.for_slider #button1:checked~.under_image .wrap_buttons .circle.one span{
+    border-color: rgb(49, 82, 157);
+    background: transparent;
+  }  
+
+  .for_slider #button2:checked~.under_image .wrap_buttons .circle.two span{
+    border-color: rgb(49, 82, 157);
+    background: transparent;
+  }  
+
+  .for_slider #button3:checked~.under_image .wrap_buttons .circle.three span{
+    border-color: rgb(49, 82, 157);
+    background: transparent;
+  }  
+
+  .for_slider #button4:checked~.under_image .wrap_buttons .circle.four span{
+    border-color: rgb(49, 82, 157);
+    background: transparent;
+  }  
+
+  .for_slider #button5:checked~.under_image .wrap_buttons .circle.five span{
+    border-color: rgb(49, 82, 157);
+    background: transparent;
+  }  
+
+  .for_slider #button1:checked:hover~.under_image .wrap_buttons .circle.one span {
+    box-sizing: border-box;
+    background-color:  transparent;
+    border-color: #dfdfdf;
     transition: all .4s ease;
 }
 
-.circle:hover {
-    opacity: 50%;
+.for_slider #button2:checked:hover~.under_image .wrap_buttons .circle.two span {
+    box-sizing: border-box;
+    background-color:  transparent;
+    border-color: #dfdfdf;
+    transition: all .4s ease;
 }
+
+.for_slider #button3:checked:hover~.under_image .wrap_buttons .circle.three span {
+    box-sizing: border-box;
+    background-color:  transparent;
+    border-color: #dfdfdf;
+    transition: all .4s ease;
+}
+
+.for_slider #button4:checked:hover~.under_image .wrap_buttons .circle.four span {
+    box-sizing: border-box;
+    background-color:  transparent;
+    border-color: #dfdfdf;
+    transition: all .4s ease;
+}
+
+.for_slider #button5:checked:hover~.under_image .wrap_buttons .circle.five span {
+    box-sizing: border-box;
+    background-color:  transparent;
+    border-color: #dfdfdf;
+    transition: all .4s ease;
+}
+
+.wrap_buttons label {
+    padding: 0.9rem;
+}
+
+
+.wrap_buttons label span {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    width: 2vh;
+    height: 2vh;
+    border: 2px solid;
+    border-color: rgb(49, 82, 157);
+    background: rgb(49, 82, 157);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.for_slider label:hover span {
+    background-color: white;
+    border-color: #dfdfdf;
+    transition: all .4s ease;
+    box-sizing: border-box;
+}
+
 
 .box_borders {
     margin-top: 5%;
